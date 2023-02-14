@@ -32,12 +32,10 @@
 // ======================================== Promises
 // .then/.catch
 
-async function getData(){
-
-	let response = await fetch(`https://api.github.com/users/iagoRRocha`)
-    let data = await response.json()
-    console.log(data)
-
-}
-
-getData()
+fetch('https://api.github.com/users/iagoRRocha')
+  .then(response => {
+    console.log(response)
+  })
+  .catch(err => {
+    console.log(err)
+  })
