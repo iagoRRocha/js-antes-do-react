@@ -1,41 +1,17 @@
-// ======================================== Rest operator
+// import { PI, soma, sub } from './lib/math'
 
-  // const { name, ...rest } = user;
+// console.log(soma(1, 2))
+// console.log(sub(1, 2))
+// console.log(PI)
 
-  // const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//--------------------------------------------
 
-  // const [first, , third,...rest] = array;
+// import * as math from './lib/math'
 
-  // document.body.innerText = JSON.stringify({ first, third, rest });
+// console.log(math.soma(1, 2))
 
+//--------------------------------------------
 
-// ======================================== short syntax
-  // const name = 'Diego';
-  // const age = 27;
+import { soma } from './lib/sum';
 
-  // const user = {
-  //   name,
-  //   age,
-  // };
-
-  // document.body.innerText = JSON.stringify(user)
-  
-  
-// ======================================== Template Literals
-
-// const name = 'Diego';
-// const message= `Bem-vindo, ${name ? name : 'Visitante'}`;
-
-// document.body.innerText = message
-
-
-// ======================================== Promises
-// .then/.catch
-
-fetch('https://api.github.com/users/iagoRRocha')
-  .then(response => {
-    console.log(response)
-  })
-  .catch(err => {
-    console.log(err)
-  })
+console.log(soma(1, 2))
