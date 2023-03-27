@@ -1,17 +1,12 @@
-// import { PI, soma, sub } from './lib/math'
+const nome = 'Iago'
+const nome2 = 'Paulo'
+const a = 1
 
-// console.log(soma(1, 2))
-// console.log(sub(1, 2))
-// console.log(PI)
+function verificarNome() {
+  if (a == 1) {
+    return document.body.innerHTML = `<p class="${nome}"></p>`
+  }
+  document.body.innerHTML = `<p class="${nome2}"></p>`
+}
 
-//--------------------------------------------
-
-// import * as math from './lib/math'
-
-// console.log(math.soma(1, 2))
-
-//--------------------------------------------
-
-import { soma } from './lib/sum';
-
-console.log(soma(1, 2))
+verificarNome()
